@@ -1,2 +1,2 @@
 # MyArchlinux
-record some config about my archlinux
+record some configurations about my archlinux
