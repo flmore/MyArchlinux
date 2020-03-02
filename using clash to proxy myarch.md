@@ -17,6 +17,15 @@ vim ~/.config/clash/config.yaml
 ## proxydriver
 The config file of proxydriver is `/etc/proxydriver.d/your_SSID.conf`. According to the clash config file, you can change the proxydriver's config file.
 ## proxychains-ng
+When you need proxy your shell, you can do this:
+```shell
+proxychains wget https://www.google.com
+```
+In short, adding the `proxychains` in front of your command line, that's easy.
+## proxy ssh
+```shell
+ssh -o Proxycommand="nc -X 5 -x proxy.net:1080 %h %p" user@server.net
+```
 # 3. Run clash
 Run the above command:
 ```shell
